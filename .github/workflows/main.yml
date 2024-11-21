@@ -11,9 +11,9 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.aimee.ro
+        server: aimee.ro
         username: bogdan@aimee.ro
         password: ${{ secrets.FTP_PASSWORD }}
-        port: 21
+        port: 22
 
         
