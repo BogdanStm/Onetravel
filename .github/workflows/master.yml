@@ -9,8 +9,9 @@ jobs:
       uses: actions/checkout@v4
     
     - name: 📂 Sync files
-      uses: bogdan
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: www.aimee.ro
         username: ${{ secrets.username }}
         password: ${{ secrets.ftp_password }}
+        server-dir: /onetravel/
